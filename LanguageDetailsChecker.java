@@ -14,7 +14,7 @@
  *
  */
 
-package org.apache.cordova.speechrecognizer;
+package org.apache.cordova.nodialogspeechrecognizer;
 
 import java.util.List;
 

@@ -17,7 +17,7 @@
 /**
  * constructor
  */
-function SpeechRecognizer() {
+function NoDialogSpeechRecognizer() {
 }
 
 /**
@@ -29,8 +29,8 @@ function SpeechRecognizer() {
  * @param maxMatches The maximum number of matches to return. 0 means the service decides how many to return.
  * @param promptString An optional string to prompt the user during recognition
  */
-SpeechRecognizer.prototype.startRecognize = function(successCallback, errorCallback, maxMatches, promptString, language) {
-    return cordova.exec(successCallback, errorCallback, "SpeechRecognizer", "startRecognize", [maxMatches, promptString, language]);
+NoDialogSpeechRecognizer.prototype.startRecognize = function(successCallback, errorCallback, maxMatches, promptString, language) {
+    return cordova.exec(successCallback, errorCallback, "NoDialogSpeechRecognizer", "startRecognize", [maxMatches, promptString, language]);
 };
 
 /**
@@ -41,8 +41,8 @@ SpeechRecognizer.prototype.startRecognize = function(successCallback, errorCallb
  *
  * Returns an array of codes in the success callback
  */
-SpeechRecognizer.prototype.getSupportedLanguages = function(successCallback, errorCallback) {
-    return cordova.exec(successCallback, errorCallback, "SpeechRecognizer", "getSupportedLanguages", []);
+NoDialogSpeechRecognizer.prototype.getSupportedLanguages = function(successCallback, errorCallback) {
+    return cordova.exec(successCallback, errorCallback, "NoDialogSpeechRecognizer", "getSupportedLanguages", []);
 };
 
 /**
@@ -53,12 +53,12 @@ SpeechRecognizer.prototype.getSupportedLanguages = function(successCallback, err
  *
  * Return a String message with the result
  */
-SpeechRecognizer.prototype.checkSpeechRecognition = function(successCallback, errorCallback) {
-    return cordova.exec(successCallback, errorCallback, "SpeechRecognizer", "checkSpeechRecognition", []);
+NoDialogSpeechRecognizer.prototype.checkSpeechRecognition = function(successCallback, errorCallback) {
+    return cordova.exec(successCallback, errorCallback, "NoDialogSpeechRecognizer", "checkSpeechRecognition", []);
 };
 
 /**
  * Export
  */
-module.exports = new SpeechRecognizer();
+module.exports = new NoDialogSpeechRecognizer();
 
