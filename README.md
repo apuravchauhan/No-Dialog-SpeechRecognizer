@@ -39,7 +39,7 @@ Installation for cordova>=3.0.0 (tested 3.1.0, 3.4.0, 6.0.0)
 cordova create buz
 cd buz
 cordova platform add android
-cordova plugin add https://github.com/poiuytrez/SpeechRecognizer
+cordova plugin add https://github.com/apuravchauhan/No-Dialog-SpeechRecognizer
 ```
   
 
@@ -86,7 +86,7 @@ Full example
                 var maxMatches = 5;
                 var promptString = "Speak now";	// optional
                 var language = "en-US";						// optional
-                window.plugins.speechrecognizer.startRecognize(function(result){
+                window.plugins.nodialogrecognizer.startRecognize(function(result){
                     alert(result);
                 }, function(errorMessage){
                     console.log("Error message: " + errorMessage);
@@ -95,7 +95,7 @@ Full example
 
             // Show the list of the supported languages
             function getSupportedLanguages() {
-                window.plugins.speechrecognizer.getSupportedLanguages(function(languages){
+                window.plugins.nodialogrecognizer.getSupportedLanguages(function(languages){
                     // display the json array
                     alert(languages);
                 }, function(error){
@@ -105,7 +105,7 @@ Full example
 
             // Check to see if a recognition activity is present
             function checkSpeechRecognition() {
-                window.plugins.speechrecognizer.checkSpeechRecognition(function(){
+                window.plugins.nodialogrecognizer.checkSpeechRecognition(function(){
                     alert('Speech Recogition is present! :D');
                 }, function(){
                     alert('Speech Recogition not found! :(');
@@ -130,6 +130,7 @@ The MIT License
 Copyright (c) 2011-2013  
 Colin Turner (github.com/koolspin)  
 Guillaume Charhon (github.com/poiuytrez)  
+Apurav Chauhan (github.com/apuravchauhan)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
