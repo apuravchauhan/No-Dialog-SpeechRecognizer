@@ -17,6 +17,10 @@
     <source-file src="SpeechRecognizer.java" target-dir="src/org/apache/cordova/nodialogspeechrecognizer" />
     <source-file src="LanguageDetailsChecker.java" target-dir="src/org/apache/cordova/nodialogspeechrecognizer" />
     
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    </config-file>
+	  
     <config-file target="res/xml/config.xml" parent="/*">
 	  <feature name="NoDialogSpeechRecognizer" >
 	    <param name="android-package" value="org.apache.cordova.nodialogspeechrecognizer.SpeechRecognizer"/>
