@@ -3,15 +3,6 @@ Android No Dialog SpeechRecognizer plugin for Cordova/Phonegap
 This plugin provides access to the speech recognition feature. This plugin will recognize commands, phrases, etc as spoken by the user.
 
 
-![Screenshot speak now](/screenshots/speaknow.png "Speak now")
-![Screenshot listening](/screenshots/listening.png "Listening")
-
-
-Live Demo
-------------
-<a href="https://play.google.com/store/apps/details?id=com.webilm.apps.feelsafemap">See it in Action</a>
-
-
 Donate
 ------------
 If this serves your purpose, please donate via Paypal
